@@ -1,0 +1,6 @@
+^^^ Sorting method = INSERTION_SORT, Test file = 32_random.binary, Result =  1
+^^^ Sorting method = HEAP_SORT, Test file = 32_random.binary, Result =  1
+^^^ Sorting method = QSORT, Test file = 32_random.binary, Result =  1
+^^^ Sorting method = QUICK_SORT, Test file = 32_random.binary, Result =  1
+^^^ Sorting method = QUICK_SORT_OPT, Test file = 32_random.binary, Result =  1
+^^^ Sorting method = QUICK_SORT_OPT_TIME_CHECK, Test file = 32_random.binary, Result =  1

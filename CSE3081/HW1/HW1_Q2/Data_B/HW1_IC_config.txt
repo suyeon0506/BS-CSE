@@ -1,0 +1,5 @@
+IC_09.input IC_09.output.txt
+IC_01.input IC_01.output.txt
+IC_02.input IC_02.output.txt
+IC_03.input IC_03.output.txt
+IC_04.input IC_04.output.txt
