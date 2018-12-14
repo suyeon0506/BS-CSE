@@ -1,0 +1,59 @@
+**opcode 받아올 차례
+
+void makeLST(char* 파일이름인자)
+{
+	unsigned int objcode[크기];//초기화 필요할수도!**전역변수
+	int LSTline = 5;
+	unsigned int loc = 0;//16진수 loc 표시
+	파일이름인자 += .lst;
+	FILE *fp_ASM;
+	FILE *fp_LST;
+	fp_ASM = fopen(fileName전역변수,"r");
+	fp_LST = fopen(파일이름인자,"w");
+	while(fgets(fileStr,MAX-1,fp_ASM) != NULL)
+	{
+		fprintf(fp_LST,"%d %6d ",LSTline,loc);
+		LSTline += 5;
+		if(별일없을떄)
+			loc += 3;
+		else if(상수 변수일때)
+			loc += 1;
+		else(또 다른 경우들~~)
+			///채우기/////
+		fileStr[strlen(fileStr)-1] = '\0';//개행 없애고
+		fputs(fileStr,MAX-1,fp_LST);
+		
+		//////여기서부터 objcode//////
+		fileStr을 공백 기준으로 쪼갠다
+		맨 처음을 symbol에 저장
+		그 다음은 mnemonic임 ;; opcode 별도 저장해도 ㄱㅊ
+		objcode배열 처음에 mnemonic의 id 저장(hashtable; opcode 명령어의 결과 별도 저장 필요할듯)
+		
+		if(fileStr의 세번째 꺼에서 ',X'가 있으면) objcode배열 두번째에 1저장
+		else() objcode 배열 두번째에 0저장
+
+		if(fileStr의 세번째 꺼에서 처음에 '#'이 있으면) 별도처리***
+
+		fileStr의 세번째 꺼를 따라가서 symbol에서 같은것찾고 그것의 주소를 objcode배열 세번째에 저장
+
+		objcode 두번째 + objcode 세번째 더해서 다시 넣으면 -> objcode완성
+		
+		fprintf(fp_LST,"%s \n",objcode);
+	}
+	
+	fclose(fp_ASM);
+	fclose(fp_LST);
+}
+
+***처리해야할것: 메모리해제/ 파일닫기 / 주석 깔끔, 필요없는것 지우기/ 에러메세지 통일
+***특히 아예 없는 명령어 들어올때 에러메세지 처리해줄것!
+***loc처리, asm파일 형태 이상한거 에러처리 필요
+*** 알고리즘 pass1,2,확인
+*max말고 ㄱㅊ은거는 30으로 바꾸기
+**hi에 새로 짠거 넣기
+**마지막줄 없고 개행있다면 처리
+*symbol도 마지막 개행 처리 // 맨 윗줄 copy도 symbol table에 들어가는지??//내림차순이라는게 완전 사전식인지 아니면 첫글자만 보면 되는지?
+
+			
+				
+

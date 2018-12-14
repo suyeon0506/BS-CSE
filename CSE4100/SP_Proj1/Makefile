@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -W -Wall
+20161620.out : 20161620.o
+	$(CC) $(CFLAGS) -o 20161620.out 20161620.o
+
+20161620.o : 20161620.h 20161620.c
+	$(CC) $(CFLAGS) -c 20161620.c
+
+clean :
+	rm *.o 20161620.out
+
