@@ -1,0 +1,2 @@
+- Computer Engineering Design and Experiment
+- 2017 semester 2 (Sep to Dec)
