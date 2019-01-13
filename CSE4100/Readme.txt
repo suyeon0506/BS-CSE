@@ -1,2 +1,2 @@
-- System Programming
+- Systems Programming
 - 2018 semester 1 (Mar to June)

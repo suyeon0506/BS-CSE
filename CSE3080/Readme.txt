@@ -1,3 +1,3 @@
-- Data Structure
+- Data Structures
 - 2017 semester 1 (Mar to June)
 - 2018 semester 1 (Mar to June)
