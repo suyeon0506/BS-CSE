@@ -1,0 +1,2 @@
+- Introduction to Computer Graphics
+- 2018 semester 1 (Mar to June)
